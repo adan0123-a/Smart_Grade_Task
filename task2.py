@@ -4,12 +4,10 @@ import json
 
 app = FastAPI()
 
-# Load student data
-def load_data():
+ def load_data():
     with open("student.json", "r") as f:
         data = json.load(f)
-    return data["student_data"]   # <-- FIX: get the list inside "student_data"
-
+    return data["student_data"]    
 @app.get("/", status_code=200)
 def get_all_students():
     students = load_data()
@@ -31,3 +29,4 @@ def get_sorted_students(sort_by: Optional[str] = Query("cgpa")):
     
     sorted_students = sorted(students, key=lambda x: x["cgpa"], reverse=True)
     return {"students": sorted_students}
+
