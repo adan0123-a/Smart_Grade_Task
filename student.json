@@ -1,0 +1,10 @@
+{
+    "student_data":
+[
+  {"id": 91, "name": "Adan", "field": "SE", "cgpa": 3.83},
+  {"id": 92, "name": "Rubbab", "field": "CS", "cgpa": 3.65},
+  {"id": 93, "name": "Ali", "field": "IT", "cgpa": 3.40},
+  {"id": 94, "name": "Sara", "field": "DS", "cgpa": 3.95}
+]
+
+}
